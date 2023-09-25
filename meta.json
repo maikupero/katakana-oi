@@ -1,0 +1,7 @@
+{
+  "name": "Katakana Oi!",
+  "description": "TODO!",
+  "template": "https://vercel.com/templates/next.js/turborepo-next-basic",
+  "featured": true,
+  "boost": true
+}
