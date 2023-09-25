@@ -4,6 +4,9 @@
 # turbo
 .turbo
 
+# docker
+.dockerignore
+
 # dependencies
 /node_modules
 /.pnp
