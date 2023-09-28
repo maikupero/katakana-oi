@@ -13,9 +13,6 @@ COPY . .
 # Install project dependencies
 RUN npm i
 
-# Turbo stuff
-RUN turbo build lint
-
 # Expose the port your Next.js app will run on
 EXPOSE 3100
 

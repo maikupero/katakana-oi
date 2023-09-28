@@ -2,21 +2,18 @@ version: '3.3'
 
 services:
   db:
+    container_name: katakanaDB
+    tty: true
     image: mariadb
+    env_file:
+      - .env
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
       TZ: US/Eastern
     ports:
-      - "3307:3307"
-  web:
-    build: .
-    ports:
-      - "3100:3100"
-    depends_on:
-      - db
+      - '3307:3307'
+    # expose:
+    #   # Opens port on the container
+    #   - '${MYSQL_PORT}'
 
 
 
