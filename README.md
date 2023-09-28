@@ -17,5 +17,3 @@ _____
 TO RUN
 docker-compose -d
 turbo dev
-
-checking 
