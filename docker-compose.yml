@@ -10,7 +10,7 @@ services:
     environment:
       TZ: US/Eastern
     ports:
-      - '3307:3307'
+      - '${MYSQL_PORT}:${MYSQL_PORT}'
     # expose:
     #   # Opens port on the container
     #   - '${MYSQL_PORT}'
