@@ -10,10 +10,9 @@ services:
     environment:
       TZ: US/Eastern
     ports:
-      - '${MYSQL_PORT}:${MYSQL_PORT}'
-    # expose:
-    #   # Opens port on the container
-    #   - '${MYSQL_PORT}'
+      - '${MYSQL_TCP_PORT}:${MYSQL_TCP_PORT}'
+    volumes:
+      - katakanaDB_data:/var/lib/mysql
 
-
-
+volumes:
+  katakanaDB_data:
