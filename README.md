@@ -12,20 +12,32 @@ And also set up with turborepo
 _____
 TO BUILD
 turbo build lint
-docker-compose up --build --remove-orphans 
+docker-compose up --build (--remove-orphans if needed)
 _____
 TO RUN
-docker run -d
+docker-compose up -d
 turbo dev
-
-
+______
+TO END
+docker-compose down
+docker volume rm katakana-oi_katakanaDB_data
+______
+VOLUMES
+docker volume ls 
+docker volume inspect katakana-oi_katakanaDB_data
+NOTE: Docker on Mac runs a docker engine in a Linux VM, not your Mac OS, so you can't find the volume's mount point in your Mac OS file system.
 
 _____ 
 LEARNING
 
-Database:
-docker volume ls
-docker volume inspect katakana-oi_katakanaDB_data
+Database References:
+https://docs.docker.com/storage/volumes/
+
+MYSQL / MariaDB
+https://mariadb.com/kb/en/choosing-the-right-storage-engine/
+
+
+
 
 The database (in this case, MariaDB) is the actual software that manages and stores your data. It's where your tables, records, and relationships are defined. Think of it as the engine that powers your data storage and retrieval operations.
 Volume:
