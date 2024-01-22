@@ -3,11 +3,10 @@
 Hello!
 
 This is a small project dedicated to the hilarious and frustrating take-over of the Japanese language by foreign words.
-_____
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-And also set up with turborepo
+And also set up with [turborepo](https://turbo.build/).
 
 _____
 TO BUILD
